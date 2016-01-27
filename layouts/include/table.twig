@@ -1,0 +1,27 @@
+<div class="row row--no-gutter">
+	<div class="col col--9-of-12">
+		<div class="table">
+			<table id="table">
+				<!-- Including first part of table -->
+				{% include 'include/thead.twig' %}
+				{% include 'include/tbody.twig' %}
+
+				<!-- Including second part of table -->
+				{% include 'include/thead-1.twig' %}
+				{% include 'include/tbody-1.twig' %}
+
+				<!-- Including third part of table -->
+				{% include 'include/thead-2.twig' %}
+				{% include 'include/tbody-2.twig' %}
+
+				<!-- Including fourth part of table -->
+				{% include 'include/thead-3.twig' %}
+				{% include 'include/tbody-3.twig' %}
+			</table>
+		</div>
+	</div>
+
+	<div class="col col--3-of-12">
+		{% include 'include/sidebar.twig' %}
+	</div>
+</div>

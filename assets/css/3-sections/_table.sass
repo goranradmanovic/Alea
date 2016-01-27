@@ -1,0 +1,138 @@
+#table 
+	width: 100vw
+
+.table
+	max-height: 460px
+	overflow-y: scroll
+
+	/* Let's get this party started */
+	&::-webkit-scrollbar
+		width: 5px
+
+	/* Track */
+	&::-webkit-scrollbar-track
+		-webkit-box-shadow: inset 0 0 6px #bbb
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb
+		background: #bbb
+		-webkit-box-shadow: inset 0 0 6px #bbb
+
+	&::-webkit-scrollbar-thumb:window-inactive
+		background: #bbb
+
+	/* Table head */
+	+element('day')
+		height: 45px
+		font-size: 12px
+		border-bottom: 1px solid white 
+		background-color: lighten($main-gray, 10%)
+		color: white
+		
+		+modifier('header')
+			width: auto
+			text-transform: uppercase
+
+		+modifier('date')
+			float: left
+			padding-left: 5px
+			font-size: 12px
+			font-weight: 300
+
+		+modifier('tipp')
+			width: auto
+			padding: 0 11px
+			background-color: lighten($main-gray, 20%)
+			font-weight: 300
+			word-spacing: 22px
+
+		+modifier('uber')
+			width: auto
+			padding: 0 11px
+			background-color: lighten($main-gray, 10%)
+			font-weight: 300
+
+		+modifier('ubr')
+			word-spacing: 20px
+
+		+modifier('tipp1')
+			width: auto
+			padding: 0 11px
+			background-color: lighten($main-gray, 20%)
+			font-weight: 300
+
+		+modifier('tip1')
+			word-spacing: 22px
+
+		+modifier('tor')
+			padding: 0 11px
+			font-weight: 300
+
+		+modifier('tors')
+			word-spacing: 50px
+
+		+modifier('geld')
+			padding: 0 11px
+			font-weight: 300
+			background-color: lighten($main-gray, 20%)
+
+		+modifier('empty')
+			padding: 0 34px
+			background-color: lighten($main-gray, 10%)
+
+	/* Table body */
+	+element('info')
+		height: 55px
+		background-color: lighten($light-gray, 30%)
+
+		+modifier('dark')
+			height: 55px
+			background-color: $light-gray
+
+		+modifier('data')
+			padding-left: 5px
+
+		+modifier('game')
+			font-size: 11px
+			font-weight: bold
+			text-transform: uppercase
+
+		+modifier('leage')
+			font-size: 8px
+			word-spacing: 5px
+
+		+modifier('time')
+			font-size: 8px
+			font-weight: bold
+
+		+modifier('right')
+			float: right
+			margin: 10px 5px 0 0
+
+		+modifier('img')
+			width: 10px
+			height: 10px
+
+		+modifier('qouta')
+			padding: 5px
+			font-size: 12px
+			border: 1px solid white
+			text-align: center
+			background-color: $light-gray
+			cursor: pointer
+
+			&:hover
+				background-color: $main-gray
+				color: white
+
+		+modifier('qouta1')
+			padding: 5px
+			font-size: 12px
+			border: 1px solid white
+			text-align: center
+			background-color: lighten($main-gray, 60%)
+			cursor: pointer
+
+			&:hover
+				background-color: $main-gray
+				color: white

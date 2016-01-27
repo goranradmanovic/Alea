@@ -1,0 +1,64 @@
+.footer
+	height: 50px
+	border-top: 2px solid white
+
+	/*Footer links*/
+
+	+element('links')
+		width: 155px
+		height: 50px
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+		+modifier('box')
+			display: inline-block
+			float: left
+			width: 45%
+			height: 43px
+			border-right: 2px solid white
+			font-size: 12px
+			text-align: center
+			padding-top: 7px
+
+		+modifier('img')
+			width: 12px
+			height: 12px
+
+	/*Footer controls*/
+	+element('controls')
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		height: 50px
+
+		+modifier('btn')
+			display: inline-block
+			float: left
+			width: 50px
+			height: 35px
+			padding-top: 15px
+			border-left: 2px solid white
+			text-align: center
+			cursor: pointer
+
+			&:hover
+				opacity: .7
+
+		+modifier('img')
+			width: 15px
+			height: 15px
+			cursor: pointer
+
+	/*Footer right text*/
+	+element('text')
+		height: 50px
+		border-left: 3px solid white
+		text-align: center
+		background-color: lighten($main-gray, 60%)
+		color: white
+		text-transform: uppercase
+
+		+modifier('info')
+			margin: 0
+			padding-top: 15px

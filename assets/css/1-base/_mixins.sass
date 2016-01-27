@@ -1,0 +1,11 @@
+=element($element)
+	&__#{$element}
+		@content
+
+=modifier($modifier)
+	&--#{$modifier}
+		@content
+
+=child($n) 
+	&:nth-child(#{$n})
+		background-color: red

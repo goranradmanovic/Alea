@@ -1,0 +1,153 @@
+//Main nav
+.main__nav
+	border-top: 2px solid white
+	background-color: $light-gray
+
+.nav
+	height: 55px
+
+	//Nav elemnts
+	+element('link')
+		display: block
+		float: left
+		width: 35px
+		height: 55px
+		padding: 8px
+		border: 1px solid white
+		font-size: 11px
+		text-align: center
+		
+		+modifier('5')
+			width: 70px
+
+		+modifier('6')
+			width: 70px
+
+		+modifier('7')
+			width: 70px
+
+		+modifier('8')
+			width: 70px
+
+		+modifier('9')
+			width: 70px
+
+		//Nav icons & numbers
+		+modifier('icon')
+			width: 20px
+			height: 20px
+
+		+modifier('balls')
+			width: 20px
+			height: 20px
+			margin-left: 10px
+
+		+modifier('number')
+			float: right
+			font-size: 8px
+
+	+element('box')
+		display: block
+		float: left
+		width: 85px
+		height: 65px
+		text-align: center
+		font-size: 11px
+
+		+modifier('1')
+			display: block
+			padding: 9px 9px
+			border-bottom: 1px solid white
+			background-color: lighten($main-gray, 50%)
+
+		+modifier('2')
+			display: inline-block
+			padding: 10px 10.5px
+			background-color: lighten($main-gray, 30%)
+			color: white
+
+
+//Search box
+.search
+	width: 100%
+	height: 55px
+	padding-left: 0
+
+	+element('box')
+		width: 170px
+		margin-top: 15px
+		margin-left: 35%
+		padding: 3px
+
+	+element('button')
+		width: 12px
+		height: 12px
+		margin-left: -20px
+
+		&:hover
+			opacity: .8
+
+//Right nav sidebar
+.sidebar
+	height: 73px
+	border-left: 3px solid white
+	background-color: lighten($main-gray, 50%)
+
+	+element('text')
+		padding: 25px 15px 15px 15px
+		text-align: center
+		text-transform: uppercase
+		font-weight: 590
+
+//Nav footer (black line)
+.nav__footer
+	height: 35px
+	border-top: 2px solid white
+	border-bottom: 2px solid white
+	background-color: $main-gray
+
+.table__title
+
+	+modifier('text')
+		margin: 0
+		margin-top: 5px
+		text-align: center
+		color: white
+
+//Arrow down & close X
+.table__controls
+	margin-top: -20px
+	margin-left: 95%
+
+	+modifier('down')
+		width: 15px
+		height: 15px
+		cursor: pointer
+
+		&:hover
+			opacity: .8
+
+	+modifier('close')
+		width: 12px
+		height: 12px
+		cursor: pointer
+
+		&:hover
+			opacity: .8
+
+//Right sidebar nav
+.sidebar__nav
+	border-left: 3px solid white
+	height: 35px
+
+	+modifier('link')
+		display: block
+		width: 104.2px
+		height: 30px
+		float: left
+		padding-top: 5px
+		text-align: center
+		color: white
+
+		&:hover, &:active
+			background-color: lighten($light-gray, 60%)

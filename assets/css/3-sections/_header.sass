@@ -1,0 +1,42 @@
+header
+	height: 40px
+	padding: 10px
+	background: $main-gray
+	color: lighten($main-gray, 60%)
+	text-align: center
+
+	.time, .date
+		display: block
+		padding: 0
+		margin: 0 auto
+		text-align: center
+		color: lighten($main-gray, 60%)
+
+	.time
+		height: 28px
+		font-size: 20px
+
+	.date
+		font-size: 10px
+	
+	.lock
+		font-size: 20px
+		margin-top: 5px
+
+	.login__link
+		display: block
+		color: lighten($main-gray, 60%)
+		font-size: 10px
+
+		&:hover
+			color: lighten($main-gray, 100%)
+
+	.flag
+		width: 30px
+		height: 17px
+		margin: 5px auto 5px auto
+		background:
+			image: url('../icons/de.svg')
+			size: contain
+			position: center
+			repeat: no-repeat
